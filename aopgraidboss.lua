@@ -22,7 +22,7 @@ local function toggleScript()
                 for _, v in pairs(en:GetChildren()) do
                     if v:FindFirstChildOfClass("Humanoid") then
                         if not table.find(plrs, v.Name) then
-                            if v.Humanoid.Health < v.Humanoid.MaxHealth * 0.8 then
+                            if v.Humanoid.Health < v.Humanoid.MaxHealth * 0.5 then
                                 v.Humanoid.Health = 0
                             end
                         end
